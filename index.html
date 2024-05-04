@@ -95,7 +95,6 @@
                 Receta en Aeropress <span>~5 min</span>
               </p>
             </div>
-
             <div class="recipes__video-item">
               <iframe
                 class="recipes__iframe"
@@ -111,6 +110,7 @@
             </div>
           </div>
         </section>
+
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
           <div class="form">
@@ -125,7 +125,9 @@
                   placeholder="Nombre"
                   required
                 />
-                <label for="number" class="form__label">Nombre *</label>
+                <label for="number" class="form__label"
+                  >Número de comensales *</label
+                >
                 <input
                   type="number"
                   min="1"
@@ -136,38 +138,45 @@
                   placeholder="Número de comensales"
                   required
                 />
-                <label for="date" class="form__label">Nombre *</label>
+                <label for="date" class="form__label">Fecha y hora *</label>
                 <input
                   type="datetime-local"
-                  min="1"
-                  max="8"
                   class="form__item form__item_el_name"
                   id="date"
                   name="date"
                   required
                 />
-                <label for="email" class="form__label">Tu correo electrónico *</label>
+                <label for="email" class="form__label"
+                  >Tu correo electrónico *</label
+                >
                 <input
                   type="email"
-                  min="1"
-                  max="8"
                   class="form__item form__item_el_name"
                   id="email"
                   name="email"
                   placeholder="email@email.com"
                   required
                 />
+              </fieldset>
 
-                <button type="submit" class="form__button">Reservar una mesa</button>
-                <div class="form__item_el_terms">
-                <input type="checkbox" name="terms" id="terms" class="form__item form__item_el_terms-box" value="terms">
-                <label class="form__label form__label_terms" for="terms">Acepto los términos de uso</label>
-              </div>
-              </div>
-
+              <fieldset class="form__handlers">
+                <button type="submit" class="form__button">
+                  Reservar una mesa
+                </button>
+                <div class="form__item form__item_el_terms">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    id="terms"
+                    class="form__item form__item_el_terms-box"
+                    value="terms"
+                  />
+                  <label class="form__label form__label_terms" for="terms"
+                    >Acepto los términos de uso</label
+                  >
+                </div>
               </fieldset>
             </form>
-          </div>
           </div>
         </section>
       </main>

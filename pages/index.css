@@ -263,3 +263,11 @@
   height: 20px;
   margin-right: 12px;
 }
+
+.form__handlers {
+  padding: 0;
+  margin: 0;
+  border: none;
+  max-width: 385px;
+  width: 385px;
+}
