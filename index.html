@@ -14,7 +14,6 @@
     />
     <title>Cafetería</title>
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,7 +44,8 @@
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="span-accent">Café de especialidad</span>en Triple Peaks
+          <span class="header__title-span-accent">Café de especialidad</span>en
+          Triple Peaks
         </h1>
         <p class="header__description">
           ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
@@ -158,27 +158,59 @@
               />
             </fieldset>
 
-            <fieldset class="form__handlers">
-              <button type="submit" class="form__button">
-                Reservar una mesa
-              </button>
-              <div class="form__item form__item_el_terms">
-                <input
-                  type="checkbox"
-                  name="terms"
-                  id="terms"
-                  class="form__item form__item_el_terms-box"
-                  value="terms"
-                />
-                <label class="form__label form__label_terms" for="terms"
-                  >Acepto los términos de uso</label
-                >
-              </div>
-            </fieldset>
+            <button type="submit" class="form__button">
+              Reservar una mesa
+            </button>
+            <div class="form__item form__item_el_terms">
+              <input
+                type="checkbox"
+                name="terms"
+                id="terms"
+                class="form__item form__item_el_terms-box"
+                value="terms"
+              />
+              <label class="form__label form__label_terms" for="terms"
+                >Acepto los términos de uso</label
+              >
+            </div>
           </form>
         </section>
       </main>
-      <footer class="footer" id="footer"></footer>
+
+      <footer class="footer" id="footer">
+        <div class="footer__content">
+          <img
+            src="images/logo_coffeeshop_light.svg"
+            alt="Logo Blanco"
+            class="footer__logo"
+          />
+          <div class="footer__circle"></div>
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="images/facebook_white.svg"
+                    alt="Facebook icono"
+                    class="footer__social-icon"
+                  />Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    src="images/instagram_white.svg"
+                    alt="Instagram icono"
+                    class="footer__social-icon"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2024 Susana Sánchez</p>
+      </footer>
     </div>
   </body>
 </html>
